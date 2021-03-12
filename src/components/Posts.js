@@ -8,7 +8,7 @@ const Posts = () => {
 
   useEffect(() => {
     PostsContext.getPosts()
-    console.log(PostsContext.posts)
+   
   }, []);
 
   return (

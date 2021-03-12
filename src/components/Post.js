@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 
+
 import postsContext from "../context/PostsContext"
 
 const Post = () => {

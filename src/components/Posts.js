@@ -15,22 +15,26 @@ const Posts = () => {
     <>
    
   
-   
+   <div className="card">
+   <div className="card-header">
+  <h1>Avaliable Posts</h1> 
+  </div>
       <div className="list-group h-100" >
-      <h1>Avaliable Posts</h1>
+    
         {PostsContext.posts.length
           ? PostsContext.posts.map((post) => (
             <a key={post.id}            
              
             href="#!"
             onClick={() => PostsContext.getPost(post.id)}
-            className="list-group-item list-group-item-action text-truncate"
+            className="list-group-item-info list-group-item text-truncate"
               > 
               {post.id} - {post.title}
             </a>
                  
             ))
           : null}
+      </div>
       </div>
     </>
   )

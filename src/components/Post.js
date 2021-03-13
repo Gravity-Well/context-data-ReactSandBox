@@ -12,19 +12,19 @@ const Post = () => {
   const { post } = PostsContext;
   return (
     <>
-      <div className="container">
+      <div className="card" style={{marginLeft:20,marginRight:20,width: 800}}>
         {post ? (
           <div>
-            <h1 >  Title: {post.title}</h1>
-           
-             
-            <h2>Post:</h2> 
-            {post.body}
-          
+            <div className="card-header">
+               <h1>Post Details</h1>
+            </div>
+            <div className="card-body">
+                  
+            <h1>{post.title}</h1>
+            <h2>{post.body}</h2>
           </div>
-        ) : (
-          "Post"
-        )}{" "}
+          </div>
+        ):null}
       </div>
     </>
   )
